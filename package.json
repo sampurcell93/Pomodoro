@@ -1,0 +1,9 @@
+{
+    "name": "pmsite",
+    "version": "0.0.0",
+    "description": "PM site",
+    "dependencies": {
+        "express": "latest"
+    },
+    "author": "Mike Bernardo"
+}

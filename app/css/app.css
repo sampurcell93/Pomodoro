@@ -1,30 +1,145 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body {
+font-family: AvenirNext-Regular,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing: antialiased;
+background-color:#FCFCFC;
 }
 
-.menu:before {
-  content: "[";
+h1 {
+font-family: AvenirNext-Regular,Helvetica,Arial,sans-serif;
+color:#49A3FF;
 }
 
-.menu:after {
-  content: "]";
+h3 {
+font-family: AvenirNext-Regular,Helvetica,Arial,sans-serif;
+color:#49A3FF;
 }
 
-.menu > li {
-  display: inline;
+
+.darknav {
+
+  background-color:black;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.leftnav {
+background-color:rgb(32, 32, 32);
+color:rgb(231, 231, 231);
+position:fixed;
+height:100%;
+width:250px;
+font-size:17px;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.leftnav h1 {
+font-size:22px;
+text-align:center;
+color:#696969;
+}
+
+.leftnav img {
+width:50px; 
+height:50px;
+margin-top:-6px;
+margin-right:10px
+}
+
+.leftnav a:link {
+  text-decoration: none;
+  color:rgb(231, 231, 231);
+}
+
+.leftnav a:visited {
+  color:rgb(231, 231, 231);
+}
+
+.leftnav .glyphicon {
+margin-top:-10px;
+margin-right:10px;
+margin-left:6px;
+font-size:40px;
+display:inline-block;
+vertical-align:middle;
+}
+
+.maincontent {
+position:absolute;
+left:250px;
+padding-left:25px;
+}
+
+.maincontainer {
+position:absolute;
+width:100%;
+height:100%;
+}
+
+
+.leftnav ul {
+margin-top:20px;
+list-style-type: none;
+padding: 0;
+}
+
+.leftnav li {
+height:80px;
+line-height:80px;
+padding: 0px 25px;
+border-bottom-style:solid;
+border-width:1px;
+border-bottom-color: rgb(49, 49, 49);
+}
+
+.leftnav li:hover {
+cursor:pointer;
+}
+
+.leftnav .selected {
+background-color:#FCFCFC;
+color: rgb(32, 32, 32);
+}
+
+.mockgroup {
+margin-top:25px;
+margin-bottom:50px;
+}
+
+.mockgroup img {
+height:100px;
+border-style: solid;
+border-width: 1px;
+border-color: #D6D6D6;
+}
+
+.mockgroupmini img {
+height:20px;
+border-style: solid;
+border-width: 1px;
+border-color: #D6D6D6;
+}
+
+.mockgroupmini .mock {
+display:inline-block;
+margin-right:20px;
+margin-bottom:20px;
+width: 20px;
+vertical-align: top;
+word-wrap: break-word;
+}
+
+.mock {
+display:inline-block;
+margin-right:40px;
+margin-bottom:20px;
+width: 180px;
+vertical-align: top;
+word-wrap: break-word;
+overflow:hidden;
+}
+
+.mock .caption {
+font-family: AvenirNext-Medium,Helvetica,Arial,sans-serif;
+margin-top:10px;
+}
+
+.mock .timestamp {
+color:rgb(177, 177, 177);
 }

@@ -2,9 +2,18 @@
 
 /* Filters */
 
-angular.module('myApp.filters', []).
-  filter('interpolate', ['version', function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    }
-  }]);
+var filters = angular.module('mockappfilters',[]);
+
+filters.filter('shortDate', function() {
+  return function(date) {
+  	//return date;
+    return moment(date).format("DD MMM YYYY");
+  }
+});
+
+filters.filter('fromNow', function() {
+  return function(date) {
+  	//return date;
+    return moment(date).fromNow();
+  }
+});

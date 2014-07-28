@@ -1,0 +1,7 @@
+<section ng-repeat="project in selectedUser.projects">
+  <a ng-href="{{projectPath(project)}}">
+    <h3> {{project.items[0].lastModifiedDate | shortDate}} - {{project.name}}</h3> 
+  </a>
+  ({{project.items.length}} items)
+
+</section>

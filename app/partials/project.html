@@ -1,0 +1,17 @@
+<h1>{{selectedProject.name}}</h1>
+<div class="mockgroup">
+<div class="mock" ng-repeat="item in selectedProject.items">
+  <a ng-href="{{fullPath(item)}}" target="_blank">
+    <img ng-src="{{cachePath(item)}}">
+  </a>
+  <div class="caption">
+  {{item.name}}
+  </div>
+  <div class="timestamp">
+  {{item.lastModifiedDate | fromNow}}
+  </div>
+</div>
+</div>
+
+
+
